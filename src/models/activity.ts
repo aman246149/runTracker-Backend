@@ -6,7 +6,7 @@ interface ActivityAttributes {
     id: number;
     userId: number;
     startTime: Date;
-    endTime: Date;
+    endTime?: Date;
     createdAt: Date;
     startCoordinates: { type: string, coordinates: [number, number] };
 }
@@ -17,7 +17,7 @@ class Activity extends Model<ActivityAttributes, ActivityCreationAttributes> imp
     public id!: number;
     public userId!: number;
     public startTime!: Date;
-    public endTime!: Date;
+    public endTime?: Date;
     public createdAt!: Date;
     public startCoordinates!: { type: string, coordinates: [number, number] };
 }
