@@ -5,7 +5,7 @@ import { createResponse } from '../global/api_response';
 export const createActivity = async (req: Request, res: Response): Promise<void> => {
     const { userId, startTime, endTime, startCoordinates } = req.body;
 
-    if (!userId || !startTime || !endTime || !startCoordinates) {
+    if (!userId || !startTime  || !startCoordinates) {
         res.status(400).json(createResponse({
             status: 'error',
             statusCode: 400,
