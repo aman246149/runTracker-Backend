@@ -43,7 +43,7 @@ Activity.init(
         },
         endTime: {
             type: DataTypes.DATE,
-            allowNull: false,
+            allowNull: true,
         },
         createdAt: {
             type: DataTypes.DATE,
